@@ -12,7 +12,7 @@ var bankNextId = 1;
 app.use(bodyParser.json());
 
 app.get('/', function(req, res){  
-	res.send('Open deposit in our bank!');   
+	res.send('Open deposit in our bank!!!');   
 }); 
 
 // GET /bank
