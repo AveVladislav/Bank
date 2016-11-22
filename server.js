@@ -4,9 +4,9 @@ var bodyParser = require('body-parser');
 var _ = require('underscore');
 
 var app = express();
-var PORT = process.env.PORT || 3000; 
+var PORT = process.env.PORT || 3000;  
 var bank = [];
-var bank = []; 
+var bankexx = []; 
 var bankNextId = 1;
 
 app.use(bodyParser.json());
@@ -23,7 +23,7 @@ app.get('/bank', function(req, res){
 // GET /bank/:id 
 app.get('/bank/:id', function(req, res){    
 	var bankId = parseInt(req.params.id, 10);
-	var matchedBank = _.findWhere(bankexx, {id: bankId}); 
+	var matchedBank = _.findWhere(bankexx, {id: bankId});  
 
 	if(matchedBank){ 
 		res.json(matchedBank);
