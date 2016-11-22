@@ -37,7 +37,7 @@ app.get('/bank/:id', function(req, res){
 
 // POST /bank
 
-app.post('/bank', function(req, res){        
+app.post('/bank', function(req, res){         
 	var body = _.pick(req.body, 'name_client', 'money', 'сurrency', 'percent_for_year', 'period_day');             
  
 	if(!_.isString(body.name_client) || body.name_client.trim().length === 0  
